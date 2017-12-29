@@ -1,6 +1,12 @@
 <template>
 <div class="hello">
   <h1>{{ msg }}</h1>
+
+
+     <button type="button" class="btn btn-primary" autocomplate="off" data-loading-text="jquery with bootstrap" @click="clickBtn">
+       Click
+     </button>
+
   <h2>Essential Links</h2>
   <ul>
     <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -10,10 +16,6 @@
     <br>
     <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
   </ul>
-
-   <button type="button" class="btn btn-primary" autocomplate="off" data-loading-text="jquery with bootstrap" @click="clickBtn">
-     Click
-   </button>
 
     <h2>Ecosystem</h2>
     <ul>
@@ -36,10 +38,7 @@ export default {
   },
   methods: {
     clickBtn(event) {
-
-      console.log('Click');
-
-      this.msg = 'Click App';
+      this.msg = '2014.04.16';
 
       // $(event.target).button('loading');
       // setTimeout(function() {
@@ -53,6 +52,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.hello {
+  margin-top: 20px;
+}
+
+.btn-primary {
+  margin : 20px 0;
+}
+
 h1,
 h2 {
   font-weight: normal;
