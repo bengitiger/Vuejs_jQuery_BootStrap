@@ -3,7 +3,7 @@
 > A Vue.js project
 
 ## Package.josn
-
+<pre><code>
 {
   "name": "exam-app",
   "version": "1.0.0",
@@ -68,7 +68,7 @@
     "not ie <= 8"
   ]
 }
-
+</code></pre>
 
 
 ## Build Setup
