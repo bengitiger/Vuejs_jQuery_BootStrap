@@ -25,6 +25,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   name: 'HelloWorld',
@@ -35,10 +36,16 @@ export default {
   },
   methods: {
     clickBtn(event) {
-      $(event.target).button('loading')
-      setTimeout(function() {
-        $(event.target).button('reset')
-      }, 1000);
+
+      console.log('Click');
+
+      this.msg = 'Click App';
+
+      // $(event.target).button('loading');
+      // setTimeout(function() {
+      //   $(event.target).button('reset');
+      // }, 1000);
+
     }
   }
 }
